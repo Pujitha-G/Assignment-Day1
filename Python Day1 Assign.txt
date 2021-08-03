@@ -1,0 +1,117 @@
+1) After running the following code, what does the variable bacon contain?
+    
+    bacon = 22
+    bacon + 1
+
+  -->Bacon has 22
+
+
+
+2) What should the values of the following two terms be?
+    'spam' + 'spamspam'
+    'spam' * 3
+
+Output: spamspamspam
+             spamspamspam
+
+3) How can you tell the difference between break and continue?
+
+  Break:    Break will terminate the execution of the current loop and passes the control to the next statement.
+  Continue:   Continue will skip/jumps off to the very next condition and continue the execution of the loop statement.
+
+
+
+4) In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+In a for loop,
+  range(10) gives output as 0,1,2,3,4,5,6,7,8,9
+  range(0,10) gives output as 0,1,2,3,4,5,6,7,8,9
+  range(0,10,1) gives output as 0,1,2,3,4,5,6,7,8,9
+
+The syntax is 
+        range(start, stop [,step])
+
+The difference is
+ range(10) has only stop value i.e., 10
+ range(0,10) has both start and stop values i.e., start=0, stop=10
+ range(0,10,1) has start, stop and step values i.e., start=0, stop=10 and step=1.
+
+
+5) Using a for loop, write a short programme that prints the numbers 1 to 10 Then, using a while loop, create an identical programme that prints the numbers 1 to 10.
+
+#Program to print numbers 1 to 10 Using for loop
+
+for i in range(1,11)
+print(i)
+
+#Program to print numbers 1 to 10 Using While loop
+
+inp=1
+while(inp<=10)
+ print(inp)
+inp+=1
+
+
+6) Given a number x, determine whether the given number is Armstrong number or not.
+
+    Input : 153
+    Output : Yes
+    153 is an Armstrong number.
+    1 * 1 * 1 + 5 * 5 * 5 + 3 * 3 * 3 = 153
+
+#Program to determine the number is Armstrong or not
+num,sum=153,0
+temp=num
+while(temp>0)
+ r=temp%10
+sum+=r**3
+temp= temp/10
+  if(num==sum):
+print("Yes")
+else:
+Print("No")
+
+
+  
+ 7) Program to find Sum of squares of first n natural numbers.
+
+def squaresum(n) :
+ 
+    sm = 0
+    for i in range(1, n+1) :
+        sm = sm + (i * i)
+     
+    return sm
+
+
+
+8) Program to Reverse words in a given String in Python.
+
+#Program to Reverse words in a given String 
+
+string= "I am handsome boy"
+words= string.split()
+words= list(reversed(words))
+print(" ".join(words))
+
+   
+9) Given a list of numbers, write a Python program to find the sum of all the elements in the list.
+    Input: [10,12,13]
+    Output: 35
+
+#Program to find sum of all elements in the list
+
+Total =0
+list1=[10,12,13]
+for ele in range(0, len(list1))
+Total+=list1(ele)
+print(Total)
+
+
+10) Write a Python program to print all even numbers between 10-1000.
+
+#Program to print all even numbers between 10-1000
+
+for num in range(10,1000)
+if num%2==0
+print(num)
